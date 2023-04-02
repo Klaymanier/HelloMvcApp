@@ -3,29 +3,29 @@
     ViewData["Title"] = "UpdateTeacher";
 }
 
-<h1>Öğretmen Güncelle</h1>
+<h1 class="mb-3">Öğretmen Güncelle</h1>
 <form asp-controller="Teacher" asp-action="UpdateTeacher" method="post">
     <input type="hidden" asp-for="Ogretmenid" />
     <div class="mb-3">
         <label>Öğrenci Adı</label>
-        <input class="form-control" type="text" asp-for="Ad" />
+        <input class="form-control mb-3" type="text" asp-for="Ad" />
     </div>
     <div>
         <label>Soyadı</label>
-        <input class="form-control" type="text" asp-for="Soyad" />
+        <input class="form-control mb-3" type="text" asp-for="Soyad" />
     </div>
     <div>
         <label>Tckimlik No'su</label>
-        <input class="form-control" type="text" asp-for="Tckimlik" />
+        <input class="form-control mb-3" type="text" asp-for="Tckimlik" />
     </div>
     <div>
         <label>Dersi</label>
-        <input class="form-control" type="text" asp-for="Ders" />
+        <input class="form-control mb-3" type="text" asp-for="Ders" />
     </div>
     <div>
         <label>Öğrenci Sayısı</label>
-        <input class="form-control" type="text" asp-for="Ogrsayi" />
+        <input class="form-control mb-3" type="text" asp-for="Ogrsayi" />
     </div>
 
-    <input type="submit" class="btn btn-success" value="Kaydet" />
+    <input type="submit" class="btn btn-success " value="Kaydet" />
 </form>

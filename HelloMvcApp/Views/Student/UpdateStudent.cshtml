@@ -3,20 +3,20 @@
     ViewData["Title"] = "UpdateStudent";
 }
 
-<h1>Ogrenci Güncelle</h1>
+<h1 class="mb-3">Ogrenci Güncelle</h1>
 <form asp-controller="Student" asp-action="UpdateStudent" method="post">
     <input type="hidden" asp-for="Ogrenciid" />
     <div class="mb-3">
         <label>Öğrenci Adı</label>
-        <input class="form-control" type="text" asp-for="Ad" />
+        <input class="form-control mb-3" type="text" asp-for="Ad" />
     </div>
     <div>
         <label>Soyadı</label>
-        <input class="form-control" type="text" asp-for="Soyad" />
+        <input class="form-control mb-3" type="text" asp-for="Soyad" />
     </div>
     <div>
         <label>Numarası</label>
-        <input class="form-control" type="text" asp-for="Numara" />
+        <input class="form-control mb-3" type="text" asp-for="Numara" />
     </div>
 
     <input type="submit" class="btn btn-success" value="Kaydet" />
