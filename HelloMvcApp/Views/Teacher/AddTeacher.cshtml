@@ -1,0 +1,36 @@
+﻿@model Ogretmen
+@{
+    ViewData["Title"] = "UpdateTeacher";
+}
+
+<h1 class="mb-3">Öğretmen Ekle</h1>
+<form asp-controller="Teacher" asp-action="AddTeacher" method="post">
+    <div class="mb-3">
+        <label>Öğretmen Adı</label>
+        <input class="form-control" type="text" asp-for="Ad" />
+    </div>
+    <div class="mb-3">
+        <label>Soyadı</label>
+        <input class="form-control" type="text" asp-for="Soyad" />
+    </div>
+    <div class="mb-3">
+        <label>Tc Kimlik</label>
+        <input class="form-control" type="text" asp-for="Tckimlik" />
+    </div>
+    <div class="mb-3">
+        <label>Dersi</label>
+        <input class="form-control" type="text" asp-for="Ders" />
+    </div>
+    <div class="mb-3">
+        <label>Öğrenci Sayısı</label>
+        <input class="form-control" type="text" asp-for="Ogrsayi" />
+    </div>
+
+    @if (TempData["Sonuc"] != null && (bool)TempData["sonuc"])
+    {
+        <script>
+            alert('Ekleme İşlemi Başarılı!!')
+        </script>
+    }
+    <input type="submit" class="btn btn-success" value="Kaydet" />
+</form>
