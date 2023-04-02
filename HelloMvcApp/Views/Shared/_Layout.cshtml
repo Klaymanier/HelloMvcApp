@@ -6,6 +6,19 @@
     <title>@ViewData["Title"] - HelloMvcApp</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            padding-top: 70px; /* navbar height + some margin */
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,6 +43,9 @@
                         <li>
                             <a class="nav-link text-white" asp-area="" asp-controller="Teacher" asp-action="Index">Öğretmen işlemleri</a>
                         </li>
+                        <li>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Snake" asp-action="Index">Yılan Oyunu</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -52,3 +68,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
