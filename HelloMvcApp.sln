@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloMvcApp", "HelloMvcApp\HelloMvcApp.csproj", "{BCE6E519-D00F-40F6-AF28-1F00E57C76EF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beltek.EFApp", "Beltek.EFApp\Beltek.EFApp.csproj", "{47D84CAF-7FCD-4367-A7F0-4E86E9AAD350}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BCE6E519-D00F-40F6-AF28-1F00E57C76EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE6E519-D00F-40F6-AF28-1F00E57C76EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE6E519-D00F-40F6-AF28-1F00E57C76EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D84CAF-7FCD-4367-A7F0-4E86E9AAD350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D84CAF-7FCD-4367-A7F0-4E86E9AAD350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D84CAF-7FCD-4367-A7F0-4E86E9AAD350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D84CAF-7FCD-4367-A7F0-4E86E9AAD350}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
